@@ -10,7 +10,7 @@ const SECRET_PASSWORD = "212205";
 
 // Birthday date
 // Format: YYYY-MM-DDTHH:MM:SS
-const BIRTHDAY_DATE = "2026-10-01T00:00:00";
+const BIRTHDAY_DATE = "2026-10-22T00:00:00";
 
 
 /* ================= ELEMENTS ================= */
