@@ -6,7 +6,7 @@
 /* ================= SETTINGS ================= */
 
 // Change this password
-const SECRET_PASSWORD = "212205";
+const SECRET_PASSWORD = "heke43";
 
 // Birthday date
 // Format: YYYY-MM-DDTHH:MM:SS
