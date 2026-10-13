@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For You ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="you.css">
+</head>
+
+
+
+<body>
+
+
+   
+
+    <!-- Floating Hearts -->
+    <div id="hearts"></div>
+
+    <!-- ================= PASSWORD SCREEN ================= -->
+    <section id="passwordScreen" class="screen active">
+
+        <div class="glass-card password-card">
+
+            <div class="small-text">A little secret awaits...</div>
+
+            <h1>For You ❤️</h1>
+
+            <p class="subtitle">
+                This little world is only for you.
+            </p>
+
+            <div class="lock">🔐</div>
+
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="Enter the secret password"
+                autocomplete="off"
+            >
+
+            <button id="unlockBtn">
+                Unlock My Heart
+            </button>
+
+            <p id="passwordError"></p>
+
+            <p class="hint">
+                Hint: something only we know 💕
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+     <!-- Background music: available on every screen -->
+<audio id="bgMusic" loop preload="auto">
+    <source src="song.mpeg" type="audio/mpeg">
+</audio>
+
+
+    <!-- ================= COUNTDOWN SCREEN ================= -->
+    <section id="countdownScreen" class="screen">
+
+        <div class="glass-card countdown-card">
+
+            <div class="small-text">Something special is coming...</div>
+
+            <h1>Until Your Day ❤️</h1>
+
+            <p class="subtitle">
+                Every second brings us closer.
+            </p>
+
+            <div class="countdown">
+
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <small>Days</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <small>Hours</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <small>Minutes</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <small>Seconds</small>
+                </div>
+
+            </div>
+
+            <p id="birthdayMessage"></p>
+
+            <button id="beginBtn" disabled>
+                🔒 Begin the Story
+            </button>
+
+            <p class="countdown-note">
+                The story opens when the countdown reaches zero.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN WEBSITE ================= -->
+    <main id="mainContent" class="hidden">
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="small-text">
+                    For someone very special
+                </div>
+
+                <h1>
+                    Happy Birthday
+                    <span>My Soul ❤️</span>
+                </h1>
+
+                <p>
+                    Today isn't just another day.
+                    It's the day the world became a little more beautiful.
+                </p>
+
+                <button class="scroll-btn" onclick="scrollToSection('letter')">
+                    Begin the Story ↓
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- MUSIC -->
+        <div class="music-player">
+
+
+            <button id="musicBtn" aria-label="Music">
+                🎵
+            </button>
+
+            <span id="musicText">Play our song</span>
+
+        </div>
+
+
+        <!-- LETTER -->
+        <section id="letter" class="content-section">
+
+            <div class="section-title">
+                <span>01</span>
+                <h2>A Letter For You</h2>
+            </div>
+
+            <div class="letter-card">
+
+                <p class="letter-greeting">
+                    My Soul,
+                </p>
+
+                <p>
+                    Happy Birthday to the person who makes ordinary
+                    moments feel special.
+                </p>
+
+                <p>
+                    I don't know if words will ever be enough to explain
+                    how much you mean to me, but today I want to try.
+                </p>
+
+                <p>
+                    You have brought so many beautiful memories into my
+                    life. Your smile, your little moments, your presence
+                    — they all mean more than you probably realize.
+                </p>
+
+                <p>
+                    I hope this new year of your life brings you happiness,
+                    peace, beautiful memories and everything your heart
+                    wishes for.
+                </p>
+
+                <p>
+                    No matter how much time passes, I hope you always
+                    remember that you are someone incredibly special.
+                </p>
+
+                <p class="letter-ending">
+                    Happy Birthday, My Soul ❤️
+                </p>
+
+            </div>
+
+        </section>
+
+
+       
+<div class="gallery">
+
+    <!-- First row: 2 images -->
+    <div class="photo-card">
+        <img src="img 1.jpeg" alt="Memory 1">
+    </div>
+
+    <div class="photo-card">
+        <img src="img 2.jpeg" alt="Memory 2">
+    </div>
+
+    <!-- Second row: next 2 images -->
+    <div class="photo-card">
+        <img src="img 3.jpeg" alt="Memory 3">
+    </div>
+
+    <div class="photo-card">
+        <img src="img4.jpeg" alt="Memory 4">
+    </div>
+
+</div>
+
+        <!-- REASONS -->
+        <section class="content-section reasons">
+
+            <div class="section-title">
+                <span>03</span>
+                <h2>Things I Love About You</h2>
+            </div>
+
+            <div class="reason-grid">
+
+                <div class="reason">
+                    <div>01</div>
+                    <h3>Your Smile</h3>
+                    <p>
+                        Somehow it can make even an ordinary day feel better.
+                    </p>
+                </div>
+
+                <div class="reason">
+                    <div>02</div>
+                    <h3>Your Heart</h3>
+                    <p>
+                        The kindness and warmth you carry are truly special.
+                    </p>
+                </div>
+
+                <div class="reason">
+                    <div>03</div>
+                    <h3>Your Presence</h3>
+                    <p>
+                        Sometimes simply having you around is enough.
+                    </p>
+                </div>
+
+                <div class="reason">
+                    <div>04</div>
+                    <h3>The Little Things</h3>
+                    <p>
+                        It's the small moments that become the biggest memories.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+       
+
+        <!-- SURPRISE -->
+        <section class="content-section surprise-section">
+
+            <div class="surprise-card">
+
+                <div class="gift">🎁</div>
+
+                <h2>One Last Surprise</h2>
+
+                <p>
+                    There is something waiting for you.
+                    But you have to open it yourself.
+                </p>
+
+                <button id="surpriseBtn">
+                    Open My Surprise ❤️
+                </button>
+
+                <div id="surpriseMessage" class="surprise-message">
+
+                    <h3>You're My Favorite Person ❤️</h3>
+
+                    <p>
+                        If I could give you one thing today,
+                        it would be the ability to see yourself
+                        through my eyes.
+                    </p>
+
+                    <p>
+                        Then you would understand just how special
+                        you really are.
+                    </p>
+
+                    <div class="big-heart">♥</div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+         <!-- ================= CANDLE MOMENT ================= -->
+
+<section class="candle-section" id="candleSection">
+
+    <div class="candle-content">
+
+        <div class="small-text">
+            Make a wish...
+        </div>
+
+        <h2>
+            One little wish<br>
+            before the final chapter ❤️
+        </h2>
+
+        <div class="cake">
+
+            <div class="candle">
+
+                <div class="flame" id="flame"></div>
+
+                <div class="wick"></div>
+
+                <div class="candle-body"></div>
+
+            </div>
+
+            <div class="cake-top"></div>
+
+            <div class="cake-body"></div>
+
+        </div>
+
+        <p id="candleText">
+            Click the flame to make your wish 🕯️
+        </p>
+
+        <button id="blowCandleBtn">
+            🕯️ Make a Wish
+        </button>
+
+    </div>
+
+</section>
+
+
+        <!-- FINAL -->
+        <section class="final-section">
+
+            <div class="final-content">
+
+                <div class="small-text">
+                    Until the next chapter...
+                </div>
+
+                <h2>
+                    Happy Birthday,
+                    <span>My Soul ❤️</span>
+                </h2>
+
+                <p>
+                    Some stories are worth remembering forever.
+                </p>
+
+                <div class="final-heart">♥</div>
+
+                <p class="forever">
+                    Always & Forever
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="you.js"></script>
+
+</body>
+</html>
